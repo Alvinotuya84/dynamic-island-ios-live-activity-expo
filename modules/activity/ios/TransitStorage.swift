@@ -5,25 +5,14 @@ public class TransitStorageModule: Module {
   public func definition() -> ModuleDefinition {
     Name("TransitStorage")
     
-    Function("set") { (appGroup: String, key: String, value: JSValue) in
-      guard let defaults = UserDefaults(suiteName: appGroup) else {
-        throw NSError(domain: "TransitStorage", code: 1, userInfo: [NSLocalizedDescriptionKey: "Failed to access UserDefaults for group \(appGroup)"])
+    Function("set") { (appGroup: String, key: String, value: String) -> Void in
+      if let defaults = UserDefaults(suiteName: appGroup) {
+        defaults.set(value, forKey: key)
+        defaults.synchronize()
       }
-      
-      if value.isNull || value.isUndefined {
-        defaults.removeObject(forKey: key)
-      } else {
-        do {
-          let jsonData = try JSONSerialization.data(withJSONObject: value.rawValue as Any)
-          defaults.set(jsonData, forKey: key)
-        } catch {
-          throw error
-        }
-      }
-      defaults.synchronize()
     }
     
-    Function("reloadWidget") { () in
+    Function("reloadWidget") { () -> Void in
       if #available(iOS 14.0, *) {
         WidgetCenter.shared.reloadAllTimelines()
       }
