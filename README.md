@@ -41,6 +41,6 @@ Transit Pulse Tracker is a sample implementation of an iOS application that comb
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/transit-pulse-tracker.git
+   git clone https://github.com/Alvinotuya84/dynamic-island-ios-live-activity-expo.git
    cd transit-pulse-tracker
    ```
