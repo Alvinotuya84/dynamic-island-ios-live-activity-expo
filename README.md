@@ -1,50 +1,47 @@
-# Welcome to your Expo app 👋
+# transit-pulse-tracker
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A sample implementation built with Expo GL and iOS Live Activities.
 
-## Get started
+## Overview
 
-1. Install dependencies
+Transit Pulse Tracker is a sample implementation of an iOS application that combines 3D visualization powered by Expo GL with iOS Live Activities for real-time transit updates. The app provides a seamless experience for tracking public transportation routes, showing real-time updates on the lock screen and in the Dynamic Island.
 
+## Features
+
+- **3D Visualization**: Interactive 3D map of transit routes using Expo GL
+- **Live Activities**: Real-time transit updates on the iOS lock screen
+- **Dynamic Island Integration**: Sleek transit information display in Dynamic Island
+- **Multi-Vehicle Support**: Supports different transit types (bus, train, subway)
+- **Real-time Updates**: Live tracking of transit progress with ETA information
+- **Delay Notifications**: Visual indicators for transit delays
+
+## Technologies Used
+
+- React Native with Expo
+- Expo GL for 3D visualization
+- THREE.js for 3D rendering
+- Expo Router for navigation
+- Custom Expo Module API for native integration
+- ActivityKit for iOS Live Activities
+- Swift and SwiftUI for native components
+
+## Screenshots
+
+![Transit Pulse Tracker](./screenshots/main-screen.png)
+![Live Activity](./screenshots/live-activity.png)
+![Dynamic Island](./screenshots/dynamic-island.png)
+
+## Requirements
+
+- iOS 16.2+ for Live Activities support
+- Expo SDK 50+
+- Xcode 15+
+- Node.js 18+
+
+## Setup and Installation
+
+1. Clone the repository:
    ```bash
-   npm install
+   git clone https://github.com/yourusername/transit-pulse-tracker.git
+   cd transit-pulse-tracker
    ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
