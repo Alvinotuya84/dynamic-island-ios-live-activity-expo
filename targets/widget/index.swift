@@ -7,6 +7,6 @@ struct exportWidgets: WidgetBundle {
         // Export widgets here
         widget()
         widgetControl()
-        TransitLiveActivity() // Replace WidgetLiveActivity with our new one
+        TransitLiveActivity()
     }
 }

@@ -163,7 +163,7 @@ struct TransitLiveActivity: Widget {
   }
 }
 
-// Preview data
+// Preview data for the widget
 extension TransitActivityAttributes {
   fileprivate static var preview: TransitActivityAttributes {
     TransitActivityAttributes(
