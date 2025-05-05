@@ -33,8 +33,8 @@ Transit Pulse Tracker is a sample implementation of an iOS application that comb
 ## Requirements
 
 - iOS 16.2+ for Live Activities support
-- Expo SDK 50+
-- Xcode 15+
+- Expo SDK 53+
+- Xcode 16+
 - Node.js 18+
 
 ## Setup and Installation
@@ -42,5 +42,5 @@ Transit Pulse Tracker is a sample implementation of an iOS application that comb
 1. Clone the repository:
    ```bash
    git clone https://github.com/Alvinotuya84/dynamic-island-ios-live-activity-expo.git
-   cd transit-pulse-tracker
+   cd dynamic-island-ios-live-activity-expo
    ```
