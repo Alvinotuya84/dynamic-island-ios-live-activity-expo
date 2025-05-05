@@ -27,9 +27,8 @@ Transit Pulse Tracker is a sample implementation of an iOS application that comb
 
 ## Screenshots
 
-![Transit Pulse Tracker](./screenshots/main-screen.png)
-![Live Activity](./screenshots/live-activity.png)
-![Dynamic Island](./screenshots/dynamic-island.png)
+![Live Activity](./assets//images/Simulator-Screenshot-iPhone-16-Pro-.jpeg)
+![Dynamic Island](./assets/images/Simulator-Screenshot-iPhone-16-Pro.png)
 
 ## Requirements
 
